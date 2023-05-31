@@ -1,0 +1,124 @@
+body {
+  background: var(--c-cream) url("../resources/assets/wall_blue_pattern.jpg") repeat;
+  background-size: 125px;
+  background-attachment: fixed;
+  padding-left: 7.5vw;
+  padding-right: 7.5vw;
+
+  color: var(--c-dark-brown)
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  font-family: var(--f-sans);
+  font-size: 1.1rem;
+
+}
+
+#title-container {
+  padding: 1px 5px;
+}
+
+#title-container h1 {
+  text-shadow: #00000050 0 3px 5px;
+}
+
+section#charte-sect, #title-container {
+  background-color: var(--c-cream);
+  border-radius: 15px;
+  box-shadow: #00000050 0 5px 15px;
+}
+
+section#charte-sect {
+  padding: 7.5vw;
+}
+
+section#charte-sect p {
+  line-height: 1.5rem;
+  text-align: justify;
+  margin: 2rem 0;
+}
+
+section#charte-sect p:last-child {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+section#charte-sect p:nth-child(3) {
+  --c-deco: #719981;
+}
+
+section#charte-sect p:nth-child(4) {
+  --c-deco: #A66D63;
+}
+
+section#charte-sect p:nth-child(5) span {
+  --c-deco: #CF7719;
+}
+
+section#charte-sect p:nth-child(6) span {
+  --c-deco: #C3A820;
+}
+
+section#charte-sect p:nth-child(7) span {
+  --c-deco: #85739A;
+}
+
+section#charte-sect p span {
+  color: var(--c-deco);
+}
+
+.paw_decors {
+  --s-paw: 2rem;
+
+  display: inline-block;
+  mask: url("../resources/assets/paw_single_red.svg") no-repeat center;
+  mask-size: var(--s-paw);
+  -webkit-mask: url("../resources/assets/paw_single_red.svg") no-repeat center;
+  -webkit-mask-size: var(--s-paw);
+
+  background-color: var(--c-deco);
+  width: var(--s-paw);
+  height: var(--s-paw);
+
+  transform: rotate(245deg);
+}
+
+.fancy {
+  font-family: var(--f-fancy);
+  text-align: center;
+}
+
+@media (min-width: 901px) {
+  body {
+    background-size: 200px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  main {
+    font-size: 1.5rem;
+  }
+
+  #title-container {
+    padding: 5px 10px;
+  }
+
+  section#charte-sect p {
+    line-height: 2.25rem;
+    margin: 4rem 0;
+  }
+
+  .paw_decors {
+    --s-paw: 3rem;
+    margin-right: 0.75rem;
+  }
+
+  section#charte-sect p:last-child {
+    font-size: 1.75rem;
+  }
+}

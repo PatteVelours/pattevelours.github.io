@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'script_mt_boldregular';
+  src: url('../resources/fonts/scriptmtbold-webfont.woff2') format('woff2'),
+  url('../resources/fonts/scriptmtbold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'leelawadee-ui';
+  src: url('../resources/fonts/LeelawUI.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'leelawadee-ui-semilight';
+  src: url('../resources/fonts/LeelUIsl.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'leelawadee-ui-bold';
+  src: url('../resources/fonts/LeelaUIb.ttf') format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+:root {
+  --c-cream: #D0C9C1;
+  --c-grey: #474036;
+  --c-dark-grey: #231F20;
+  --c-brown: #421E0D;
+  --c-dark-brown: #201207;
+  --c-brick: #A66D63;
+
+  --f-fancy: 'script_mt_boldregular', cursive;
+  --f-sans: 'leelawadee-ui', sans-serif;
+  --f-sans-light: 'leelawadee-ui-semilight', sans-serif;
+  --f-sans-bold: 'leelawadee-ui-bold', sans-serif;
+
+  font-size: 16px;
+
+  --s-title: 1rem;
+  --s-text: 0.8rem;
+
+  --tr-header: all 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+body {
+  padding-top: 150px;
+}
+
+.glass-container {
+  backdrop-filter: blur(20px) brightness(0.65);
+  background-color: rgba(66, 30, 13, 0.35);
+  border-radius: 15px;
+  display: flex;
+}
+
+#title-container {
+  margin: 0 auto 50px auto;
+
+  width: max-content;
+}
+
+#title-container h1 {
+  font-family: var(--f-fancy);
+  font-size: 2rem;
+  text-align: center;
+  margin: 10px 15px;
+  text-shadow: #00000080 0 3px 10px;
+}
+
+@media (min-width: 901px) {
+  body {
+    padding-top: 150px;
+  }
+
+  #title-container h1 {
+    font-size: 3.5rem;
+  }
+}

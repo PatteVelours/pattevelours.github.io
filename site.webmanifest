@@ -1,0 +1,12 @@
+{
+  "short_name": "Patte Velours",
+  "name": "La Patte de Velours",
+  "icons": [{
+    "src": "icon.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  }],
+  "start_url": "/?utm_source=homescreen",
+  "background_color": "#fafafa",
+  "theme_color": "#fafafa"
+}
