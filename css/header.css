@@ -4,6 +4,7 @@ header {
   height: 75px;
 
   backdrop-filter: blur(30px) brightness(0.75);
+  -webkit-backdrop-filter: blur(30px) brightness(0.75);
   background-color: rgba(66, 30, 13, 0.35);
 
   position: fixed;
