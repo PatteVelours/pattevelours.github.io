@@ -109,6 +109,10 @@ h1 {
     padding: 0;
   }
 
+  #hours-txt > ul > li {
+      margin: 15px 0;
+  }
+
   #hours-txt > ul > li > p:last-child {
     text-align: center;
     width: 200px;
