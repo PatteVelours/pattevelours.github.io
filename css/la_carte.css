@@ -1,0 +1,17 @@
+body {
+    background: var(--c-cream) url("../resources/assets/wall_blue_pattern.jpg") repeat;
+    background-size: 125px;
+    background-attachment: fixed;
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
+
+    color: var(--c-dark-brown)
+}
+
+@media (min-width: 901px) {
+    body {
+        background-size: 200px;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+}

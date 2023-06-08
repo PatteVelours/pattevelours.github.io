@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" href="css/index_top.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/rotate.css">
@@ -27,7 +28,7 @@
 </head>
 
 <body>
-  <div id="logo_container">
+  <div id="logo_container" style="opacity: 0;">
     <svg>
       <use href="resources/assets/logo_patte_velours.svg#logo"/>
     </svg>
@@ -57,12 +58,46 @@
   </header>
 
   <main>
-    <h1>La patte de velours</h1>
-    <h2>Le site est en cours de développement, il sera bientôt terminé mais en attendant libre à vous de l'explorer !</h2>
+    <section id="page_top">
+      <div id="deco-top">
+        <div id="ampoule_container">
+          <img src="resources/assets/ampoule.svg" alt="ampoule">
+        </div>
+
+        <svg id="pt_logo">
+          <use href="resources/assets/logo_patte_velours.svg#logo"/>
+        </svg>
+      </div>
+
+        <div id="page_top_text">
+          <p>
+            Bienvenue dans mon café atypique à Saint-Etienne, où il fait bon vivre.
+            <br><br>
+            La patte de velours est née d’une fusion de plusieurs passions : mes chats, cuisiner et recevoir. Grande amoureuse de nos amis félins depuis toujours, le concept nippon de café des chats m’a immédiatement conquise. De chaleureux moments vous attendent en compagnie de mes chats, autour de gourmandises maison confectionnées par mes soins.
+            <br><br>
+            Au plaisir de vous accueillir dans mon petit coin de paradis, Bénédicte. 😊
+          </p>
+
+          <button id="scroll_down" onclick="scroll_to_anchor('content')">
+            En savoir plus
+          </button>
+        </div>
+    </section>
+
+    <section id="content">
+      <div id="placeholders">
+        <h1>La patte de velours</h1>
+        <h2>Le site est en cours de développement, il sera bientôt terminé mais en attendant libre à vous de l'explorer !</h2>
+      </div>
+    </section>
+
+
   </main>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/header.js"></script>
+  <script src="js/viewport_logo_toggle.js"></script>
+  <script src="js/offset_anchor.js"></script>
 </body>
 
 </html>

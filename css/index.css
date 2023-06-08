@@ -1,7 +1,17 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--c-cream);
   text-align: center;
   font-size: 1em;
+  padding: 150px 20px 0;
+
+  font-family: var(--f-sans);
+  color: var(--c-dark-brown);
+
+  height: 300vh;
 }
 
 h1 {
@@ -10,4 +20,23 @@ h1 {
 
 h2 {
   font-family: var(--f-sans);
+}
+
+#content {
+  z-index: 50;
+  scale: 1;
+}
+
+#content {
+  
+}
+
+@media (min-width: 901px) {
+  body {
+    padding: 150px 50px 0;
+  }
+
+  #content {
+    background-color: transparent;
+  }
 }
