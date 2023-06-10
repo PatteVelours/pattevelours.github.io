@@ -73,6 +73,10 @@ header nav {
   display: flex;
 }
 
+#logo_container.hidden:not(.menu-open) {
+  opacity: 0;
+}
+
 /*################### MENU OPEN ###################*/
 
 #logo_container.menu-open {

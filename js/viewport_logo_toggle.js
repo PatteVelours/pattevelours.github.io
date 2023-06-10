@@ -39,9 +39,9 @@ const handler = onVisibilityChange(el, function () {
 
     // if the big logo is in the viewport, hide the header logo and vice versa.
     if (isElementInViewport(el)) {
-        header_logo.style.opacity = "0";
+      header_logo.classList.add("hidden");
     } else {
-        header_logo.style.opacity = "1";
+      header_logo.classList.remove("hidden");
     }
 });
 
