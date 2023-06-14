@@ -306,6 +306,11 @@ main {
   align-self: center;
 }
 
+#glace-dispo {
+  margin-top: 3rem;
+  font-family: var(--f-fancy);
+}
+
 #formules .menu-content {
   width: 90%;
   align-self: center;
@@ -397,5 +402,9 @@ main {
 
   .bf-sub#symple hr {
     margin: 4rem 0;
+  }
+
+  #warning-alcool {
+    font-size: 1rem;
   }
 }

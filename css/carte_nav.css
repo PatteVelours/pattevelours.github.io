@@ -1,1 +1,106 @@
-/* TODO Faire la nav */
+
+nav#carte-nav {
+  position: fixed;
+  top: 100px;
+  right: 0;
+  z-index: 90;
+  /*overflow: hidden;*/
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+  font-family: var(--f-fancy);
+}
+
+
+nav#carte-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.menu-goto {
+  width: 120%;
+  background-color: var(--c-cream);
+  margin: 5px 0;
+
+  border-radius: 10px;
+  box-shadow: #00000050 0 5px 15px;
+
+  position: relative;
+  left: 0;
+
+  transition: all 0.3s ease-out;
+
+  cursor: pointer;
+}
+
+.menu-goto:hover, .current-menu-item {
+  left: -10%;
+}
+
+.menu-goto p {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--c-dark-brown);
+  width: 100%;
+  height: 3rem;
+  padding: 0 1rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#pre-carte-nav {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  nav#carte-nav {
+    right: -60%;
+  }
+
+  #pre-carte-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    position: fixed;
+    top: 100px;
+    right: -30px;
+    width: 150px;
+    background-color: var(--c-cream);
+    border-radius: 10px;
+    box-shadow: #00000050 0 5px 15px;
+
+    transition: all 0.3s ease-out;
+  }
+
+  #pre-carte-nav p {
+    margin-right: 10px;
+    font-family: var(--f-fancy);
+  }
+
+  #pre-carte-nav.carte-nav-active {
+    right: -60%;
+  }
+
+  #carte-nav.carte-nav-active {
+    right: 0;
+  }
+
+  #carte-nav.carte-nav-active .menu-goto {
+    box-shadow: #00000050 0 5px 15px 1px;
+  }
+
+  .menu-goto p {
+    font-size: 1.25rem;
+    padding: 0 0.5rem;
+    margin: 0;
+  }
+}

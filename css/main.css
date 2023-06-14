@@ -50,6 +50,7 @@
 
 html {
   background-color: var(--c-cream);
+  scroll-behavior: smooth;
 }
 
 body {
