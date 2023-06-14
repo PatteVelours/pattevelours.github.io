@@ -138,6 +138,22 @@ header nav ul li a {
   color: var(--c-cream);
 }
 
+#header_menu_icon {
+  display: block;
+}
+
+#header_menu_icon.menu-open {
+  display: none;
+}
+
+#header_close_icon {
+  display: none;
+}
+
+#header_close_icon.menu-open {
+  display: block;
+}
+
 /*########## Desktop Format ##############*/
 @media (min-width: 901px) {
   header, header.menu-open {

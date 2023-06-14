@@ -1,17 +1,18 @@
 
 // get the menu button, the icon inside it, the header, logo, and the current page link
 let menu_btn = document.getElementById("menu-btn");
-let btn_icon = menu_btn.querySelector("span");
 let header = document.getElementById("header");
 let logo = document.getElementById("logo_container");
 let current_page_li = document.getElementById("current_page");
+let btn_icon_menu = document.getElementById("header_menu_icon");
+let btn_icon_close = document.getElementById("header_close_icon");
 
 // toggle the menu
 function toggleMenu() {
   header.classList.toggle("menu-open");
   logo.classList.toggle("menu-open");
-
-  btn_icon.textContent = (btn_icon.textContent === "menu") ? "close" : "menu";
+  btn_icon_menu.classList.toggle("menu-open");
+  btn_icon_close.classList.toggle("menu-open");
 }
 
 // add event listeners to the menu button
