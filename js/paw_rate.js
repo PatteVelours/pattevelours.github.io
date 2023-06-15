@@ -3,15 +3,75 @@
 let cat_ratings = document.getElementsByClassName("cat-rating");
 
 // create a chat object for each cat
-let hermione = {
+const hermione = {
   rates : [3,4,2,5],  // number of paws to grey out in order
   cat_ratings_index: 0,  // index of the cat rating in the cat_ratings array
 };
 
+const praline = {
+  rates : [4,3,2,2],
+  cat_ratings_index: 1,
+}
+
+const aslan = {
+  rates : [4,3,4,2],
+  cat_ratings_index : 2,
+}
+
+const sherlock = {
+  rates: [3,4,1,5],
+  cat_ratings_index: 3,
+}
+
+const quiquinette = {
+  rates: [5,4,3,2],
+  cat_ratings_index: 4,
+}
+
+const gribouille = {
+  rates: [1,2,3,2],
+  cat_ratings_index: 5,
+}
+
+const nhouvel = {
+  rates: [3,1,5,1],
+  cat_ratings_index: 6,
+}
+
+const nolly = {
+  rates: [3,4,3,2],
+  cat_ratings_index: 7,
+}
+
+const snickers = {
+  rates: [3,2,3,1],
+  cat_ratings_index: 8,
+}
+
+const snowbelle = {
+  rates: [5,1,5,1],
+  cat_ratings_index: 9,
+}
+
+const thor = {
+  rates: [3,2,5,1],
+  cat_ratings_index: 10,
+}
+
 // add all the chats to an array
-// TODO: add more chats ############################
 let chats = [
   hermione,
+  praline,
+  aslan,
+  sherlock,
+  quiquinette,
+  gribouille,
+  nhouvel,
+  nolly,
+  snickers,
+  snowbelle,
+  thor,
+
 ];
 
 // loop through all the chats
