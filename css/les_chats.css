@@ -59,7 +59,6 @@ main {
 .cat-misc > aside {
   width: 50%;
   overflow: hidden;
-  object-fit: cover;
   border-radius: 15px;
   box-shadow: #00000050 0 15px 15px -15px;
 
@@ -69,6 +68,7 @@ main {
 .cat-misc > aside > img {
   width: 100%;
   object-fit: cover;
+  aspect-ratio: 1/1;
 }
 
 .cat-infos {

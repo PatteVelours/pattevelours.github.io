@@ -75,7 +75,7 @@ h1 {
     padding: 125px 50px 0;
   }
 
-  #content {
-    background-color: transparent;
+  #content hr {
+    width: 65%;
   }
 }
