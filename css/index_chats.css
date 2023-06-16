@@ -1,0 +1,195 @@
+#les_chats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 100%;
+  width: 97.5%;
+}
+
+.cat-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1rem 0;
+
+  max-width: 100vw;
+  width: 100%;
+  position: relative;
+}
+
+.cat-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  margin: 0.4rem;
+
+  position: relative;
+  height: 100%;
+}
+
+.cat-cell img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  aspect-ratio: 1/1;
+  border-radius: 100px;
+  box-shadow: #00000080 0 5px 10px -5px;
+
+  object-fit: cover;
+}
+
+.cat-cell aside {
+  font-size: 0.8rem;
+  font-family: var(--f-sans-light);
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.cat-cell a {
+  text-decoration: none;
+}
+
+.cat-cell aside p {
+  margin: 0;
+}
+
+#cat-cell-1 {
+  bottom: -10px;
+  width: 15vw;
+}
+
+#cat-cell-2 {
+  bottom: 10px;
+  width: 21vw;
+}
+
+#cat-cell-3 {
+  left: -2%;
+  bottom: -17px;
+  width: 15vw;
+}
+
+#cat-cell-4 {
+  right: 2vw;
+  bottom: 13px;
+  width: 20vw;
+}
+
+#cat-cell-5 {
+  left: -5vw;
+  bottom: -25px;
+  width: 12vw;
+}
+
+#cat-cell-6 {
+  left: 2vw;
+  bottom: -5px;
+  width: 12vw;
+}
+
+#cat-cell-7 {
+  left: 1vw;
+  top: -23px;
+  width: 17vw;
+}
+
+#cat-cell-8 {
+  left: 0;
+  top: 5px;
+  width: 20vw;
+}
+
+#cat-cell-9 {
+  right: 2vw;
+  top: -20px;
+  width: 15vw;
+}
+
+#cat-cell-10 {
+  right: 1vw;
+  top: -10px;
+  width: 11vw;
+}
+
+#cat-cell-11 {
+  left: 2vw;
+  top: -30px;
+  width: 15vw;
+}
+
+
+@media (min-width: 700px) {
+  #chats-bulles-art {
+    max-width: 1100px;
+    width: 90vw;
+  }
+
+  .cat-row {
+    height: 200px;
+  }
+
+  .cat-cell {
+    height: 100%;
+    margin: 10px;
+  }
+
+  .cat-cell a {
+    height: 100%;
+    width: 100%;
+  }
+
+  .cat-cell img {
+    width: 90%;
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+  }
+
+  #cat-cell-3 {
+    top: 50px;
+    left: -2vw
+  }
+
+  #cat-cell-4 {
+    right: 4vw;
+  }
+
+  #cat-cell-6 {
+    left: 2vw;
+    top: 50px;
+    width: 20vw;
+  }
+
+  #cat-cell-7 {
+    top: 35px;
+    left: 2vw
+  }
+
+  #cat-cell-9 {
+    left: 2vw;
+  }
+
+  #cat-cell-10 {
+    top: -50px;
+    left: 1vw
+  }
+
+  @media (min-width: 900px) {
+    .cat-cell {
+      margin: 25px;
+    }
+
+    .cat-cell img {
+      transition: all 0.2s ease-out;
+    }
+
+    .cat-cell:hover img {
+      transform: scale(1.1);
+    }
+  }
+}
+

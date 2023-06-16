@@ -1,3 +1,5 @@
+@import "index_chats.css";
+
 html {
   scroll-behavior: smooth;
 }
@@ -18,17 +20,54 @@ h1 {
   font-family: var(--f-sans-light);
 }
 
-h2 {
-  font-family: var(--f-sans);
-}
-
 #content {
   z-index: 50;
   scale: 1;
+  margin-top: 5rem;
+  font-family: var(--f-sans);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-#content {
+#content hr {
+  margin: 2rem 0;
+  border: 1px solid var(--c-dark-brown);
+  border-radius: 10px;
+  width: 75%;
+}
 
+#content h2 {
+  font-family: var(--f-sans-light);
+  font-size: 2em;
+  font-weight: lighter;
+  margin-top: 0;
+}
+
+#content a {
+  color: var(--c-dark-brown);
+}
+
+#content a:visited {
+  color: var(--c-dark-brown);
+}
+
+#pre-txt {
+  font-size: 1.25em;
+  color: var(--c-dark-brown);
+  margin-bottom: 1rem;
+}
+
+/* ##### Horaires ##### */
+
+#horaires p {
+  font-size: 1.25rem;
+}
+
+#horaires h4 {
+  font-size: 1.25rem;
 }
 
 @media (min-width: 901px) {
