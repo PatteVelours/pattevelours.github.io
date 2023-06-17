@@ -42,9 +42,17 @@ article.glass-container {
   aspect-ratio: 9/10;
   margin: 20px 0 20px 10px;
   max-width: 150px;
+  border-radius: 10px;
 
+  box-shadow: #00000050 0 10px 10px -5px;
+  transition: all 0.25s ease-out;
 
   flex: 10;
+}
+
+.avantage-content aside:hover {
+  transform: scale(1.07);
+  box-shadow: #00000050 0 15px 20px -5px;
 }
 
 .avantage-content aside img {
@@ -52,6 +60,10 @@ article.glass-container {
   width: 100%;
   object-fit: cover;
   border-radius: 10px;
+}
+
+.glass-container:not(:last-of-type) aside img {
+  transform: scale(1.5);
 }
 
 .avantage-content > div {
@@ -68,7 +80,30 @@ article.glass-container {
   letter-spacing: 0.65px;
 }
 
-/*TODO Faire la version desktop*/
+#avantage-dialog {
+  padding: 0;
+  border: none!important;
+  height: fit-content;
+  width: fit-content;
+  background: none;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: #00000050 0 10px 10px -5px;
+
+  transition: all 0.25s ease-out;
+}
+
+
+
+#avantage-dialog img {
+  width: 80vw;
+  height: auto;
+  border: none!important;
+  outline: none;
+
+  object-fit: cover;
+}
 
 @media (min-width: 901px) {
   body {
@@ -97,5 +132,10 @@ article.glass-container {
   .avantage-content p {
     font-size: 1.8rem;
     line-height: 2.5rem;
+  }
+
+  #avantage-dialog img {
+    width: auto;
+    height: 80vh;
   }
 }

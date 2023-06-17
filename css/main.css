@@ -104,6 +104,20 @@ body::-webkit-scrollbar-thumb
   opacity: 50%;
 }
 
+dialog *:focus, dialog:focus {
+  outline: none!important;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0)!important;
+  -webkit-tap-highlight-color: transparent!important;
+}
+
+dialog, dialog::backdrop{
+  opacity: 0;
+}
+
+dialog[open], dialog[open]::backdrop {
+  opacity: 1;
+}
+
 @media (min-width: 901px) {
 
   #title-container h1 {

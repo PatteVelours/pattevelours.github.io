@@ -72,33 +72,40 @@
   margin: 0;
 }
 
+.carte-scroll::-webkit-scrollbar-track
+{
+  border-radius: 0;
+  background-color: var(--c-cream);
+}
+
+.carte-scroll::-webkit-scrollbar
+{
+  height: 5px;
+  background-color: #F5F5F5;
+}
+
+.carte-scroll::-webkit-scrollbar-thumb
+{
+  width: 12px;
+  border-radius: 10px;
+  background-color: #20120780;
+  opacity: 50%;
+}
+
 @media (min-width: 901px) {
-  .carte-scroll::-webkit-scrollbar-track
-  {
-    border-radius: 0;
-    background-color: var(--c-cream);
-  }
 
-  .carte-scroll::-webkit-scrollbar
-  {
-    height: 5px;
-    background-color: #F5F5F5;
-  }
-
-  .carte-scroll::-webkit-scrollbar-thumb
-  {
-    width: 12px;
-    border-radius: 10px;
-    background-color: #20120780;
-    opacity: 50%;
+  .carte-scroll {
+    flex-wrap: wrap;
+    height: auto;
+    overflow: visible;
   }
 
   .carte-scroll a {
-    -webkit-user-drag: none;
-    user-select: none;
+    width: calc(25% - 10px);
+    margin: 10px 5px;
   }
 
   .carte-art {
-    width: 250px;
+    width: 90%;
   }
 }
