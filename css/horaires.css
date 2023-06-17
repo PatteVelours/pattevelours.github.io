@@ -77,6 +77,14 @@ h1 {
   display: None;
 }
 
+#sect-hours > p {
+  font-family: var(--f-sans);
+  font-size: 1rem;
+  margin: 2rem 0 0;
+  padding: 0 10px;
+  text-align: center;
+}
+
 @media (min-width: 901px) {
   body {
     background-size: 500px;
@@ -139,5 +147,9 @@ h1 {
     left: -38px;
 
     transform: rotate(355deg);
+  }
+
+  #sect-hours > p {
+    font-size: 1.2rem;
   }
 }

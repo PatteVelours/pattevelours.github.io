@@ -4,7 +4,7 @@ let cat_ratings = document.getElementsByClassName("cat-rating");
 
 // create a chat object for each cat
 const hermione = {
-  rates : [3,4,2,5],  // number of paws to grey out in order
+  rates : [4,4,2,1],  // number of paws to grey out in order
   cat_ratings_index: 0,  // index of the cat rating in the cat_ratings array
 };
 
