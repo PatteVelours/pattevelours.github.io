@@ -187,6 +187,10 @@
       margin: 25px;
     }
 
+    .cat-cell aside p {
+      font-size: 1.25rem;
+    }
+
     .cat-cell img {
       transition: all 0.2s ease-out;
     }

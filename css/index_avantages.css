@@ -1,0 +1,159 @@
+.avantage-container {
+  width: 100%;
+  max-width: 100%;
+  background-color: rgba(61, 19, 2, 0.52);
+  height: max-content;
+  border-radius: 15px;
+  padding: 5% 0;
+
+  box-shadow: #00000050 0 10px 10px -5px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#av-desc {
+  color: var(--c-cream);
+  font-weight: normal;
+  font-size: 1.4rem;
+  margin: 0 5% 5%;
+}
+
+#av-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  width: 90%;
+  border-radius: 15px;
+  background-color: rgba(44, 14, 2, 0.25);
+  box-shadow: inset #00000050 0 0px 15px;
+
+
+}
+
+.avantage-container a {
+  color: var(--c-cream);
+  text-decoration: none;
+  width: 45%;
+  height: fit-content;
+
+  margin: 1.5%;
+}
+
+#av-desc a:visited {
+  color: var(--c-cream);
+}
+
+.av-art {
+  width: 100%;
+  height: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  border-radius: 15px;
+  padding-top: 5%;
+}
+
+.av-img-container {
+  width: 90%;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+  box-shadow: #00000030 0 10px 10px -5px;
+
+  border-radius: 10px;
+}
+
+.av-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.av-txt-container {
+  width: 90%;
+  height: 20%;
+  margin: 1em 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.av-art p {
+  font-size: 1.25rem;
+  color: var(--c-cream);
+  margin: 0;
+  text-align: center;
+}
+
+#av-links a:not(:last-of-type) img {
+  transform: scale(1.5);
+}
+
+@media (min-width: 901px) {
+  .avantage-container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 2% 0;
+  }
+
+  #av-desc {
+    font-size: 1.6rem;
+    margin: 0 5% 2.5%;
+  }
+
+  #av-links {
+    width: 80%;
+    height: 250px;
+    justify-content: space-around;
+  }
+
+  .avantage-container a {
+    width: 25%;
+    height: 100%;
+    margin: 1.5%;
+  }
+
+  .av-art {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 2.5%;
+  }
+
+  .av-img-container {
+    height: 70%;
+  }
+
+  .av-img-container img {
+    transition: all 0.3s ease-out;
+  }
+
+  .av-art:hover .av-img-container img {
+    transform: scale(1.1);
+  }
+
+  #av-links a:not(:last-of-type) .av-art:hover img {
+    transform: scale(1.65);
+  }
+
+
+  .av-txt-container {
+    height: 20%;
+    margin: 0;
+    justify-content: center;
+  }
+
+  .av-txt-container p {
+    font-size: 1.4rem;
+  }
+}

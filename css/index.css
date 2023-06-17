@@ -1,5 +1,6 @@
 @import "index_chats.css";
 @import "index_carte.css";
+@import "index_avantages.css";
 
 html {
   scroll-behavior: smooth;
@@ -13,8 +14,6 @@ body {
 
   font-family: var(--f-sans);
   color: var(--c-dark-brown);
-
-  height: 300vh;
 }
 
 h1 {
