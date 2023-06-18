@@ -15,7 +15,9 @@ footer {
   margin-top: 75px;
 
   text-align: center;
+}
 
+footer * {
   color: var(--c-cream);
 }
 
@@ -28,7 +30,7 @@ footer > div {
   justify-content: flex-start;
 }
 
-a:visited {
+footer a:visited {
   color: var(--c-cream);
 }
 

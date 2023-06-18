@@ -1,12 +1,26 @@
 {
   "short_name": "Patte Velours",
   "name": "La Patte de Velours",
-  "icons": [{
-    "src": "icon.png",
-    "type": "image/png",
-    "sizes": "192x192"
-  }],
-  "start_url": "/?utm_source=homescreen",
-  "background_color": "#fafafa",
-  "theme_color": "#fafafa"
+  "icons": [
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#D0C9C1",
+  "theme_color": "#D0C9C1",
+  "description": "La Patte de Velours est un café des chats situé à Saint-Etienne. Venez découvrir nos chats et déguster nos boissons et pâtisseries !",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "lang": "fr-FR",
+  "scope": "/",
+  "prefer_related_applications": false,
+  "related_applications": [
+  {
+    "platform": "web"
+  }
+  ]
+
 }

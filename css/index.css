@@ -2,18 +2,17 @@
 @import "index_carte.css";
 @import "index_avantages.css";
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background-color: var(--c-cream);
   text-align: center;
   font-size: 1em;
-  padding: 150px 20px 0;
 
   font-family: var(--f-sans);
   color: var(--c-dark-brown);
+}
+
+main {
+  padding: 0 20px;
 }
 
 h1 {
@@ -72,7 +71,10 @@ h1 {
 
 @media (min-width: 901px) {
   body {
-    padding: 125px 50px 0;
+  }
+
+  main {
+    padding: 0 50px;
   }
 
   #content hr {
