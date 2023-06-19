@@ -107,5 +107,11 @@
 
   .carte-art {
     width: 90%;
+
+    transition: transform 0.25s ease-out;
+  }
+
+  .carte-art:hover {
+    transform: scale(1.05);
   }
 }

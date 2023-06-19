@@ -338,6 +338,29 @@ main {
   text-decoration: underline;
 }
 
+.vege {
+  height: 3rem;
+  display: inline;
+  border-radius: 5px;
+  margin-left: 1rem;
+}
+
+#glaces img.vege {
+  width: fit-content;
+}
+
+.vege-big {
+  height: 4rem;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.vege-except {
+  font-size: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
 @media (min-width: 901px) {
   body {
     background-size: 200px;
