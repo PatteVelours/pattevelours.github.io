@@ -107,6 +107,7 @@
 
   .carte-art {
     width: 90%;
+    height: 300px;
 
     transition: transform 0.25s ease-out;
   }
