@@ -34,12 +34,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    pointer-events: none;
+    user-select: none;
 }
 
 #deco-top #ampoule_container img {
     height: 100%;
     width: 100%;
     aspect-ratio: 1/1;
+
+    pointer-events: none;
+    user-select: none;
 }
 
 #deco-top #pt_logo {
