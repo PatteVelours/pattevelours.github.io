@@ -3,9 +3,9 @@
   "name": "La Patte de Velours",
   "icons": [
     {
-      "src": "icon.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "src": "resources/icon.svg",
+      "type": "svg",
+      "sizes": "any"
     }
   ],
   "start_url": "/",
