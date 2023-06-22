@@ -1,0 +1,51 @@
+
+#reseau-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 100%;
+}
+
+#reseau-container p {
+  font-size: 1.25rem;
+}
+
+#reseaux-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+
+  width: 100%;
+  max-width: 500px;
+}
+
+#reseaux-logos div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#reseaux-logos div p {
+  margin: 0;
+}
+
+@media (min-width: 901px) {
+
+  #reseaux-logos {
+    margin-top: 2rem;
+  }
+
+  #reseaux-logos div {
+    transition: all 0.2s ease-out;
+  }
+
+  #reseaux-logos div:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}

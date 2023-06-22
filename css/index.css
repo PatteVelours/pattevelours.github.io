@@ -1,6 +1,7 @@
 @import "index_chats.css";
 @import "index_carte.css";
 @import "index_avantages.css";
+@import "index_reseaux.css";
 
 body {
   background-color: var(--c-cream);
