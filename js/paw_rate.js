@@ -58,6 +58,16 @@ const thor = {
   cat_ratings_index: 10,
 }
 
+const uby = {
+  rates: [4,4,2,1],
+  cat_ratings_index: 11,
+}
+
+const uma = {
+  rates: [2,2,3,4],
+  cat_ratings_index: 12,
+}
+
 // add all the chats to an array
 let chats = [
   hermione,
@@ -71,7 +81,8 @@ let chats = [
   snickers,
   snowbelle,
   thor,
-
+  uby,
+  uma
 ];
 
 // loop through all the chats
