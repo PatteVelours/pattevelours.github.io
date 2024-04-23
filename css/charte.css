@@ -47,23 +47,23 @@ section#charte-sect p:last-child {
   font-size: 1.25rem;
 }
 
-section#charte-sect p:nth-child(3) {
+section#charte-sect p:nth-child(1) {
   --c-deco: #719981;
 }
 
-section#charte-sect p:nth-child(4) {
+section#charte-sect p:nth-child(2) {
+  --c-deco: #719981;
+}
+
+section#charte-sect p:nth-child(3) {
   --c-deco: #A66D63;
 }
 
-section#charte-sect p:nth-child(5) span {
+section#charte-sect p:nth-child(4) span {
   --c-deco: #CF7719;
 }
 
-section#charte-sect p:nth-child(6) span {
-  --c-deco: #C3A820;
-}
-
-section#charte-sect p:nth-child(7) span {
+section#charte-sect p:nth-child(5) span {
   --c-deco: #85739A;
 }
 
